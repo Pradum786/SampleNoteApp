@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_register">
+
+    <fragment
+        android:id="@+id/fragment_register"
+        android:name="com.pradum786.samplenote.ui.login.fragment_register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_fragment_register_to_fragment_main"
+            app:destination="@id/fragment_main"
+            app:popUpTo="@id/fragment_register"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fragment_register_to_fragment_login"
+            app:destination="@id/fragment_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.pradum786.samplenote.ui.login.fragment_login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_main"
+            app:destination="@id/fragment_main"
+            app:popUpTo="@id/fragment_register"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.pradum786.samplenote.ui.note.fragment_main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_profile"
+            app:destination="@id/fragment_profile" />
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_note"
+            app:destination="@id/fragment_note" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_note"
+        android:name="com.pradum786.samplenote.ui.note.fragment_note"
+        android:label="fragment_note"
+        tools:layout="@layout/fragment_note" />
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.pradum786.samplenote.ui.profile.fragment_profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
