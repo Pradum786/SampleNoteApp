@@ -11,4 +11,4 @@ This is a simple note taking app in Android with Integrated API. In this project
 # 🚀 About this series
 This Projrct is divided into 2 parts -
 * Android App
-* Rest API (Node JS)
+* [Rest API (Node JS)](https://github.com/Pradum786/NoteAPI)
