@@ -9,6 +9,6 @@ This is a simple note taking app in Android with Integrated API. In this project
 * Handling validations and loading state.
 * Complete Signup/Login Flow
 # 🚀 About this series
-This Projrct is divided into 2 parts -
+This Project is divided into 2 parts -
 * Android App
 * [Rest API (Node JS)](https://github.com/Pradum786/NoteAPI)
